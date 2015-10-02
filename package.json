@@ -11,7 +11,6 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "readme": "# snippets-jade\n\nbasic snippets of jade-language\n\nthis is cloned from snippets of [language-html](https://github.com/atom/language-html)\nAnd this was converted by [html2jade](https://github.com/donpark/html2jade)",
   "readmeFilename": "README.md",
   "devDependencies": {
     "async": "^1.4.2",
