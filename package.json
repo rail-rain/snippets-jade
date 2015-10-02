@@ -9,7 +9,7 @@
   "repository": "https://github.com/rail-rain/snippets-jade",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.0.0 <2.0.0"
+    "atom": "*"
   },
   "readmeFilename": "README.md",
   "devDependencies": {
