@@ -12,16 +12,18 @@ const HTML2JADE_OPTIONS = {
 	numeric: true
 };
 
-const SNIPPET_SRC_PATH = '../src/html-snippets.cson';
+const SNIPPET_SRC_PATH = '../src/snippets-html.cson';
 const SNIPPET_DIST_PATH = '../snippets/snippets-jade.cson';
 
 const snippetConvert = (snippet, key, callback) => {
 
 	html2jade.convertHtml(snippet['body']
-		.replace('$', '__').replace(':', '-----').replace('{', '----').replace('}', '---'),
+		.replace('$', '__').replace(':', '-----').replace('{', '----').replace('}', '---')
+		.replace('body', 'body_'),
 		HTML2JADE_OPTIONS, (error, jade) => {
 			snippet['body'] = jade
 				.replace(/__/g, '$').replace(/-----/g, ':').replace(/----/g, '{').replace(/---/g, '}')
+				.replace(/body_/, 'body')
 				.replace(/\| /, '').replace(/\n$/, '');
 
 			callback(error);
