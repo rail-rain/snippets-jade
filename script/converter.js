@@ -12,7 +12,7 @@ const HTML2JADE_OPTIONS = {
 	numeric: true
 };
 
-const SNIPPET_SRC_PATH = '../src/snippets-html.cson';
+const SNIPPET_SRC_PATH = "../language-html/snippets/language-html.cson";
 const SNIPPET_DIST_PATH = '../snippets/snippets-jade.cson';
 
 const snippetConvert = (snippet, key, callback) => {
