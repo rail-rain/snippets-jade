@@ -11,9 +11,6 @@
   "engines": {
     "atom": "*"
   },
-  "scripts": {
-    "build" : "node ./script/converter.js"
-  },
   "readmeFilename": "README.md",
   "devDependencies": {
     "async": "^1.4.2",
