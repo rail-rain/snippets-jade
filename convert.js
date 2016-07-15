@@ -13,8 +13,8 @@ const HTML2JADE_OPTIONS = {
 	numeric: true
 };
 
-const SNIPPET_SRC_PATH = '../language-html/snippets/language-html.cson';
-const SNIPPET_DIST_PATH = '../snippets/snippets-jade.cson';
+const SNIPPET_SRC_PATH = 'language-html/snippets/language-html.cson';
+const SNIPPET_DIST_PATH = 'snippets/snippets-jade.cson';
 
 function htmltojade(html) {
 	var jade;
