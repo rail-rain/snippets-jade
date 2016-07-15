@@ -27,12 +27,44 @@ function htmltojade(html) {
 }
 
 function snippetConvert(snippet, key) {
+	switch (key) {
+		case 'Address':
+			snippet['body'] = 'address${1:.$2}\n\t$3';
+			break;
+		case 'Area':
+			snippet['body'] = 'area(${1:shape="${2:default}", }coords="$3"${4:, href="${5:#}"})\n$0';
+			break;
+		case 'Button':
+			snippet['body'] = 'button(type="${1:button}"${2:, name="${3:button}"}) $4\n$0';
+			break;
+		case 'Column':
+			snippet['body'] = 'col $1\n$0';
+			break;
+		case 'Details':
+			snippet['body'] = 'details${1:(open)} $2\n$0';
+			break;
+		case 'Label':
+			snippet['body'] = 'label${1:(for="$2")} $3\n$0'
+			break;
+		case 'Option':
+			snippet['body'] = 'option${1:(value="${2:option}")} ${3:option}\n$0';
+			break;
+		case 'Preformatted Text':
+			snippet['body'] = 'pre.\n\t$1';
+			break;
+		case 'Script':
+			snippet['body'] = 'script${1:(type="${2:text/javascript}")}.\n\t$3';
+			break;
+		case 'Video':
+			snippet['body'] =  'video(src="${1:videofile.ogg}"${2:, autoplay}${3:, poster="${4:posterimage.jpg}"}) $5'
+			break;
+		default:
 			snippet['body'] = snippet['body']
 				.replace(/\$/g, '__').replace('body', 'body_');
 			snippet['body'] = htmltojade(snippet['body'])
 				.replace(/__/g, '$').replace('body_', 'body')
 				.replace(/\| /, '').replace(/\n$/, '');
-
+	}
 
 	return snippet;
 };
