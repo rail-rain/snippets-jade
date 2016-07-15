@@ -1,5 +1,6 @@
 const async = require('async');
 const fs = require('fs');
+const _ = require('underscore');
 const html2jade = require('html2jade');
 const CSON = require('cson-parser');
 
@@ -15,26 +16,34 @@ const HTML2JADE_OPTIONS = {
 const SNIPPET_SRC_PATH = '../language-html/snippets/language-html.cson';
 const SNIPPET_DIST_PATH = '../snippets/snippets-jade.cson';
 
-const snippetConvert = (snippet, key, callback) => {
-	const fixedSnippetBody = snippet['body']
-		.replace(/\$/g, '__').replace('body', 'body_');
+function htmltojade(html) {
+	var jade;
+	const cd = (error, result) => {
+		if (error) throw error;
+		jade = result;
+	};
+	html2jade.convertHtml(html, HTML2JADE_OPTIONS, cd);
+	return jade;
+}
 
-	html2jade.convertHtml(fixedSnippetBody,
-		HTML2JADE_OPTIONS, (error, jade) => {
-			snippet['body'] = jade
-				.replace(/__/g, '$').replace(/body_/, 'body')
+function snippetConvert(snippet, key) {
+			snippet['body'] = snippet['body']
+				.replace(/\$/g, '__').replace('body', 'body_');
+			snippet['body'] = htmltojade(snippet['body'])
+				.replace(/__/g, '$').replace('body_', 'body')
 				.replace(/\| /, '').replace(/\n$/, '');
 
-			callback(error);
-		});
+
+	return snippet;
 };
 
 async.waterfall([
-	fs.readFile.bind(null, SNIPPET_SRC_PATH), (file, callback) => {
+	fs.readFile.bind(null, SNIPPET_SRC_PATH),
+	(file, callback) => {
 		const snippetsRoot = CSON.parse(file.toString());
 		const snippets = snippetsRoot[Object.keys(snippetsRoot)[0]];
-		async.forEachOf(snippets, snippetConvert,
-			error => callback(error, CSON.stringify({'.source.jade, .source.pug': snippets}, null, '\t')));
+		_.map(snippets, snippetConvert);
+		callback(null, CSON.stringify({'.source.jade, .source.pug': snippets}, null, '\t'));
 	},
 	fs.writeFile.bind(null, SNIPPET_DIST_PATH)
 ], error => {
