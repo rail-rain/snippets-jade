@@ -8,6 +8,9 @@
   ],
   "repository": "https://github.com/rail-rain/snippets-jade",
   "license": "MIT",
+  "scripts": {
+    "build": "node convert.js"
+  },
   "engines": {
     "atom": "*"
   },
