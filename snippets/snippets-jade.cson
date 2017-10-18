@@ -1,47 +1,26 @@
 ".source.jade, .source.pug":
   # A
-	Anchor:
-		prefix: "a"
-		body: '''
-			a(href="${1:#}") $2
-			$0
-		'''
-	Abbreviation:
-		prefix: "abbr"
-		body: '''
-			abbr(title="$1") $2
-			$0
-		'''
-	Address:
-		prefix: "address"
-		body: '''
-			address${1:.$2}
-				$3
-		'''
-	Area:
-		prefix: "area"
-		body: '''
-			area(${1:shape="${2:default}", }coords="$3"${4:, href="${5:#}", alt="$6"})
-			$0
-		'''
-	Article:
-		prefix: "article"
-		body: '''
-			article.$1
-				$2
-		'''
-	Aside:
-		prefix: "aside"
-		body: '''
-			aside.$1
-				$2
-		'''
-	Audio:
-		prefix: "audio"
-		body: '''
-			audio(src="$1")
-				$2
-		'''
+  'Anchor':
+    'prefix': 'a'
+    'body': 'a(href="${1:#}") $2\n$0'
+  'Abbreviation':
+    'prefix': 'abbr'
+    'body': 'abbr(title="$1") $2\n$0'
+  'Address':
+    'prefix': 'address'
+    'body': 'address${1:.$2}\n\t$3'
+  'Area':
+    'prefix': 'area'
+    'body': 'area(${1:shape="${2:default}", }coords="$3"${4:, href="${5:#}", alt="$6"})\n$0'
+  'Article':
+    'prefix': 'article'
+    'body': 'article.$1\n\t$2'
+  'Aside':
+    'prefix': 'aside'
+    'body': 'aside.$1\n\t$2'
+  'Audio':
+    'prefix': 'audio'
+    'body': 'audio(src="$1")\n\t$2'
   # B
 	Body:
 		prefix: "body"
