@@ -69,63 +69,36 @@
     'prefix': '--'
     'body': '// $1\n$0'
   # D
-	"HTML — 5":
-		prefix: "doctype"
-		body: "doctype html"
-	Data:
-		prefix: "data"
-		body: '''
-			data(value="$1") $2
-			$0
-		'''
-	"Data List":
-		prefix: "datalist"
-		body: '''
-			datalist${1:.$2} $3
-			$0
-		'''
-	Description:
-		prefix: "dd"
-		body: '''
-			dd $1
-			$0
-		'''
-	"Deleted Text":
-		prefix: "del"
-		body: '''
-			del $1
-			$0
-		'''
-	Details:
-		prefix: "details"
-		body: '''
-			details${1:(open)} $2
-			$0
-		'''
-	Definition:
-		prefix: "dfn"
-		body: '''
-			dfn $1
-			$0
-		'''
-	"Description List":
-		prefix: "dl"
-		body: '''
-			dl${1:.$2} $3
-			$0
-		'''
-	"Definition Term":
-		prefix: "dt"
-		body: '''
-			dt $1
-			$0
-		'''
-	Div:
-		prefix: "div"
-		body: '''
-			.$1
-				$2
-		'''
+  'HTML — 5':
+    'prefix': 'doctype'
+    'body': 'doctype html'
+  'Data':
+    'prefix': 'data'
+    'body': 'data(value="$1") $2\n$0'
+  'Data List':
+    'prefix': 'datalist'
+    'body': 'datalist${1:.$2} $3\n$0f'
+  'Description':
+    'prefix': 'dd'
+    'body': 'dd $1\n$0'
+  'Deleted Text':
+    'prefix': 'del'
+    'body': 'del $1\n$0'
+  'Details':
+    'prefix': 'details'
+    'body': 'details${1:(open)}\n\t$2'
+  'Definition':
+    'prefix': 'dfn'
+    'body': 'dfn $1\n$0'
+  'Description List':
+    'prefix': 'dl'
+    'body': 'dl${1:.$2}\n\t$3'
+  'Definition Term':
+    'prefix': 'dt'
+    'body': 'dt $1\n$0'
+  'Div':
+    'prefix': 'div'
+    'body': '.$1\n\t$2'
   # E
 	Emphasis:
 		prefix: "em"
