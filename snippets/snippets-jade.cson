@@ -47,48 +47,27 @@
     'prefix': 'button'
     'body': 'button(type="${1:button}"${2:, name="${3:button}"}) $4\n$0'
   # C
-	Canvas:
-		prefix: "canvas"
-		body: '''
-			canvas(id="${1:canvas}", width="${2:300}", height="${3:300}") $4
-			$0
-		'''
-	Caption:
-		prefix: "caption"
-		body: '''
-			caption $1
-			$0
-		'''
-	Citation:
-		prefix: "cite"
-		body: '''
-			cite $1
-			$0
-		'''
-	Code:
-		prefix: "code"
-		body: '''
-			code $1
-			$0
-		'''
-	Column:
-		prefix: "col"
-		body: '''
-			col${1:(span="${2:2}")}
-			$0
-		'''
-	"Column Group":
-		prefix: "colgroup"
-		body: '''
-			colgroup $1
-			$0
-		'''
-	Comment:
-		prefix: "--"
-		body: '''
-			// $1
-			$0
-		'''
+  'Canvas':
+    'prefix': 'canvas'
+    'body': 'canvas(id="${1:canvas}", width="${2:300}", height="${3:300}") $4\n$0'
+  'Caption':
+    'prefix': 'caption'
+    'body': 'caption $1\n$0'
+  'Citation':
+    'prefix': 'cite'
+    'body': 'cite $1\n$0'
+  'Code':
+    'prefix': 'code'
+    'body': 'code $1\n$0'
+  'Column':
+    'prefix': 'col'
+    'body': 'col${1:(span="${2:2}")}\n$0'
+  'Column Group':
+    'prefix': 'colgroup'
+    'body': 'colgroup $1\n$0'
+  'Comment':
+    'prefix': '--'
+    'body': '// $1\n$0'
   # D
 	"HTML — 5":
 		prefix: "doctype"
