@@ -1,4 +1,5 @@
 ".source.jade, .source.pug":
+  # A
 	Anchor:
 		prefix: "a"
 		body: '''
@@ -41,6 +42,7 @@
 			audio(src="$1")
 				$2
 		'''
+  # B
 	Body:
 		prefix: "body"
 		body: '''
@@ -86,6 +88,7 @@
 			button(type="${1:button}"${2:, name="${3:button}"}) $4
 			$0
 		'''
+  # C
 	Canvas:
 		prefix: "canvas"
 		body: '''
@@ -128,6 +131,7 @@
 			// $1
 			$0
 		'''
+  # D
 	"HTML — 5":
 		prefix: "doctype"
 		body: "doctype html"
@@ -185,6 +189,7 @@
 			.$1
 				$2
 		'''
+  # E
 	Emphasis:
 		prefix: "em"
 		body: '''
@@ -197,6 +202,7 @@
 			embed(type="${1:video/quicktime}", src="${2:#}", width="${3:300}", height="${4:300}")
 			$0
 		'''
+  # F
 	Favicon:
 		prefix: "favicon"
 		body: '''
@@ -233,6 +239,8 @@
 			form.$1(action="${2:index.html}", method="${3:post}")
 				$4
 		'''
+  # G
+  # H
 	"Heading 1":
 		prefix: "h1"
 		body: '''
@@ -300,6 +308,7 @@
 			body
 				$2
 		'''
+  # I
 	Italic:
 		prefix: "i"
 		body: '''
@@ -336,6 +345,8 @@
 			ins $1
 			$0
 		'''
+  # J
+  # K
 	"Keyboard Input":
 		prefix: "kbd"
 		body: '''
@@ -348,6 +359,7 @@
 			keygen(name="${1:name}", challenge="${2:string}", keytype="${3:RSA}", keyparams="${4:medium}")
 			$0
 		'''
+  # L
 	Label:
 		prefix: "label"
 		body: '''
@@ -372,6 +384,7 @@
 			link(rel="${1:stylesheet}", href="${2:/css/master.css}")
 			$0
 		'''
+  # M
 	Main:
 		prefix: "main"
 		body: '''
@@ -423,6 +436,7 @@
 			meta(name="${1:twitter:}", content="$2")
 			$0
 		'''
+  # N
 	Navigation:
 		prefix: "nav"
 		body: '''
@@ -435,6 +449,7 @@
 			noscript
 				$1
 		'''
+  # O
 	Object:
 		prefix: "object"
 		body: '''
@@ -465,6 +480,7 @@
 			output(name="${1:result}") $2
 			$0
 		'''
+  # P
 	Paragraph:
 		prefix: "p"
 		body: '''
@@ -489,12 +505,14 @@
 			progress(value="${1:0}", max="${2:100}") ${3:0%}
 			$0
 		'''
+  # Q
 	Quote:
 		prefix: "q"
 		body: '''
 			q${1:(cite="$2")} $3
 			$0
 		'''
+  # R
 	"Ruby Base":
 		prefix: "rb"
 		body: '''
@@ -525,6 +543,7 @@
 			ruby $1
 			$0
 		'''
+  # S
 	Strikethrough:
 		prefix: "s"
 		body: '''
@@ -615,6 +634,7 @@
 			svg
 				$1
 		'''
+  # T
 	Table:
 		prefix: "table"
 		body: '''
@@ -687,6 +707,7 @@
 			track(kind="${1:subtitles}", src="${2:sampleSubtitles_en.srt}", srclang="${3:en}")
 			$0
 		'''
+  # U
 	Underline:
 		prefix: "u"
 		body: '''
@@ -699,6 +720,7 @@
 			ul
 				$1
 		'''
+  # V
 	Variable:
 		prefix: "var"
 		body: '''
@@ -708,6 +730,7 @@
 	Video:
 		prefix: "video"
 		body: "video(src=\"${1:videofile.ogg}\"${2:, autoplay}${3:, poster=\"${4:posterimage.jpg}\"}) $5"
+  # W
 	"Word Break Opportunity":
 		prefix: "wbr"
 		body: "wbr"
