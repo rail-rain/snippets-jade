@@ -107,42 +107,24 @@
     'prefix': 'embed'
     'body': 'embed(type="${1:video/quicktime}", src="${2:#}", width="${3:300}", height="${4:300}")\n$0'
   # F
-	Favicon:
-		prefix: "favicon"
-		body: '''
-			link(rel="shortcut icon", href="$1.ico")
-			$0
-		'''
-	Fieldset:
-		prefix: "fieldset"
-		body: '''
-			fieldset
-				$1
-		'''
-	"Figure Caption":
-		prefix: "figcaption"
-		body: '''
-			figcaption $1
-			$0
-		'''
-	Figure:
-		prefix: "figure"
-		body: '''
-			figure
-				$1
-		'''
-	Footer:
-		prefix: "footer"
-		body: '''
-			footer $1
-			$0
-		'''
-	Form:
-		prefix: "form"
-		body: '''
-			form.$1(action="${2:index.html}", method="${3:post}")
-				$4
-		'''
+  'Favicon':
+    'prefix': 'favicon'
+    'body': 'link(rel="shortcut icon", href="$1.ico")\n$0'
+  'Fieldset':
+    'prefix': 'fieldset'
+    'body': 'fieldset\n\t$1'
+  'Figure Caption':
+    'prefix': 'figcaption'
+    'body': 'figcaption $1\n$0'
+  'Figure':
+    'prefix': 'figure'
+    'body': 'figure\n$1'
+  'Footer':
+    'prefix': 'footer'
+    'body': 'footer $1\n$0'
+  'Form':
+    'prefix': 'form'
+    'body': 'form.$1(action="${2:index.html}", method="${3:post}")\n\t$4'
   # G
   # H
 	"Heading 1":
