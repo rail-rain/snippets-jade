@@ -100,18 +100,12 @@
     'prefix': 'div'
     'body': '.$1\n\t$2'
   # E
-	Emphasis:
-		prefix: "em"
-		body: '''
-			em $1
-			$0
-		'''
-	Embed:
-		prefix: "embed"
-		body: '''
-			embed(type="${1:video/quicktime}", src="${2:#}", width="${3:300}", height="${4:300}")
-			$0
-		'''
+  'Emphasis':
+    'prefix': 'em'
+    'body': 'em $1\n$0'
+  'Embed':
+    'prefix': 'embed'
+    'body': 'embed(type="${1:video/quicktime}", src="${2:#}", width="${3:300}", height="${4:300}")\n$0'
   # F
 	Favicon:
 		prefix: "favicon"
