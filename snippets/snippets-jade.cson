@@ -2,16 +2,16 @@
   # A
   'Anchor':
     'prefix': 'a'
-    'body': 'a(href="${1:#}") $2\n$0'
+    'body': 'a(href="${1:#}") $2'
   'Abbreviation':
     'prefix': 'abbr'
-    'body': 'abbr(title="$1") $2\n$0'
+    'body': 'abbr(title="$1") $2'
   'Address':
     'prefix': 'address'
     'body': 'address${1:.$2}\n\t$3'
   'Area':
     'prefix': 'area'
-    'body': 'area(${1:shape="${2:default}", }coords="$3"${4:, href="${5:#}", alt="$6"})\n$0'
+    'body': 'area(${1:shape="${2:default}", }coords="$3"${4:, href="${5:#}", alt="$6"})'
   'Article':
     'prefix': 'article'
     'body': 'article.$1\n\t$2'
@@ -27,16 +27,16 @@
     'body': 'body\n\t$1'
   'Bold':
     'prefix': 'b'
-    'body': 'b $1\n$0'
+    'body': 'b $1'
   'Base':
     'prefix': 'base'
-    'body': 'base(href="${1:#}", target="${2:_blank}")\n$0'
+    'body': 'base(href="${1:#}", target="${2:_blank}")'
   'Bi-Directional Isolation':
     'prefix': 'bdi'
-    'body': 'bdi${1:(dir="${2:rtl}")} $3\n$0'
+    'body': 'bdi${1:(dir="${2:rtl}")} $3'
   'Bi-Directional Override':
     'prefix': 'bdo'
-    'body': 'bdo(dir="${1:rtl}") $2\n$0'
+    'body': 'bdo(dir="${1:rtl}") $2'
   'Blockquote':
     'prefix': 'blockquote'
     'body': 'blockquote(cite="${1:http://}")\n\t$2'
@@ -45,83 +45,83 @@
     'body': 'br'
   'Button':
     'prefix': 'button'
-    'body': 'button(type="${1:button}"${2:, name="${3:button}"}) $4\n$0'
+    'body': 'button(type="${1:button}"${2:, name="${3:button}"}) $4'
   # C
   'Canvas':
     'prefix': 'canvas'
-    'body': 'canvas(id="${1:canvas}", width="${2:300}", height="${3:300}") $4\n$0'
+    'body': 'canvas(id="${1:canvas}", width="${2:300}", height="${3:300}") $4'
   'Caption':
     'prefix': 'caption'
-    'body': 'caption $1\n$0'
+    'body': 'caption $1'
   'Citation':
     'prefix': 'cite'
-    'body': 'cite $1\n$0'
+    'body': 'cite $1'
   'Code':
     'prefix': 'code'
-    'body': 'code $1\n$0'
+    'body': 'code $1'
   'Column':
     'prefix': 'col'
-    'body': 'col${1:(span="${2:2}")}\n$0'
+    'body': 'col${1:(span="${2:2}")}'
   'Column Group':
     'prefix': 'colgroup'
-    'body': 'colgroup $1\n$0'
+    'body': 'colgroup $1'
   'Comment':
     'prefix': '--'
-    'body': '// $1\n$0'
+    'body': '// $1'
   # D
   'HTML — 5':
     'prefix': 'doctype'
     'body': 'doctype html'
   'Data':
     'prefix': 'data'
-    'body': 'data(value="$1") $2\n$0'
+    'body': 'data(value="$1") $2'
   'Data List':
     'prefix': 'datalist'
-    'body': 'datalist${1:.$2} $3\n$0f'
+    'body': 'datalist${1:.$2} $3'
   'Description':
     'prefix': 'dd'
-    'body': 'dd $1\n$0'
+    'body': 'dd $1'
   'Deleted Text':
     'prefix': 'del'
-    'body': 'del $1\n$0'
+    'body': 'del $1'
   'Details':
     'prefix': 'details'
     'body': 'details${1:(open)}\n\t$2'
   'Definition':
     'prefix': 'dfn'
-    'body': 'dfn $1\n$0'
+    'body': 'dfn $1'
   'Description List':
     'prefix': 'dl'
     'body': 'dl${1:.$2}\n\t$3'
   'Definition Term':
     'prefix': 'dt'
-    'body': 'dt $1\n$0'
+    'body': 'dt $1'
   'Div':
     'prefix': 'div'
     'body': '.$1\n\t$2'
   # E
   'Emphasis':
     'prefix': 'em'
-    'body': 'em $1\n$0'
+    'body': 'em $1'
   'Embed':
     'prefix': 'embed'
-    'body': 'embed(type="${1:video/quicktime}", src="${2:#}", width="${3:300}", height="${4:300}")\n$0'
+    'body': 'embed(type="${1:video/quicktime}", src="${2:#}", width="${3:300}", height="${4:300}")'
   # F
   'Favicon':
     'prefix': 'favicon'
-    'body': 'link(rel="shortcut icon", href="$1.ico")\n$0'
+    'body': 'link(rel="shortcut icon", href="$1.ico")'
   'Fieldset':
     'prefix': 'fieldset'
     'body': 'fieldset\n\t$1'
   'Figure Caption':
     'prefix': 'figcaption'
-    'body': 'figcaption $1\n$0'
+    'body': 'figcaption $1'
   'Figure':
     'prefix': 'figure'
-    'body': 'figure\n$1'
+    'body': 'figure'
   'Footer':
     'prefix': 'footer'
-    'body': 'footer $1\n$0'
+    'body': 'footer $1'
   'Form':
     'prefix': 'form'
     'body': 'form.$1(action="${2:index.html}", method="${3:post}")\n\t$4'
