@@ -265,12 +265,9 @@
     'prefix': 'progress'
     'body': 'progress(value="${1:0}", max="${2:100}") ${3:0%}'
   # Q
-	Quote:
-		prefix: "q"
-		body: '''
-			q${1:(cite="$2")} $3
-			$0
-		'''
+  'Quote':
+    'prefix': 'q'
+    'body': 'q${1:(cite="$2")} $3'
   # R
 	"Ruby Base":
 		prefix: "rb"
