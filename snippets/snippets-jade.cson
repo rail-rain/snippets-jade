@@ -188,37 +188,22 @@
     'prefix': 'keygen'
     'body': 'keygen(name="${1:name}", challenge="${2:string}", keytype="${3:RSA}", keyparams="${4:medium}")$0'
   # L
-	Label:
-		prefix: "label"
-		body: '''
-			label${1:(for="$2")} $3
-			$0
-		'''
-	Legend:
-		prefix: "legend"
-		body: '''
-			legend $1
-			$0
-		'''
-	"List Item":
-		prefix: "li"
-		body: '''
-			li $1
-			$0
-		'''
-	Link:
-		prefix: "link"
-		body: '''
-			link(rel="${1:stylesheet}", href="${2:/css/master.css}")
-			$0
-		'''
+  'Label':
+    'prefix': 'label'
+    'body': 'label${1:(for="$2")} $3'
+  'Legend':
+    'prefix': 'legend'
+    'body': 'legend $1'
+  'List Item':
+    'prefix': 'li'
+    'body': 'li $1'
+  'Link':
+    'prefix': 'link'
+    'body': 'link(rel="${1:stylesheet}", href="${2:/css/master.css}")$0'
   # M
-	Main:
-		prefix: "main"
-		body: '''
-			main
-				$1
-		'''
+  'Main':
+    'prefix': 'main'
+    'body': 'main\n\t$1'
 	Map:
 		prefix: "map"
 		body: '''
