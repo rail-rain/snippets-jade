@@ -285,96 +285,51 @@
     'prefix': 'ruby'
     'body': 'ruby $1'
   # S
-	Strikethrough:
-		prefix: "s"
-		body: '''
-			s $1
-			$0
-		'''
-	"Sample Output":
-		prefix: "samp"
-		body: '''
-			samp $1
-			$0
-		'''
-	Script:
-		prefix: "script"
-		body: '''
-			script${1:(type="${2:text/javascript}")}.
-				$3
-		'''
-	"Script With External Source":
-		prefix: "scriptsrc"
-		body: '''
-			script(src="$1", charset="${2:utf-8}")
-			$0
-		'''
-	Section:
-		prefix: "section"
-		body: '''
-			section
-				$1
-		'''
-	Select:
-		prefix: "select"
-		body: '''
-			select.$1(name="$2")
-				$3
-		'''
-	Small:
-		prefix: "small"
-		body: '''
-			small $1
-			$0
-		'''
-	Source:
-		prefix: "source"
-		body: '''
-			source(src="${1:https://}", type="${2:video/}")
-			$0
-		'''
-	Span:
-		prefix: "span"
-		body: '''
-			span $1
-			$0
-		'''
-	Strong:
-		prefix: "strong"
-		body: '''
-			strong $1
-			$0
-		'''
-	Style:
-		prefix: "style"
-		body: '''
-			style(media="screen").
-				$1
-		'''
-	Subscript:
-		prefix: "sub"
-		body: '''
-			sub $1
-			$0
-		'''
-	Summary:
-		prefix: "summary"
-		body: '''
-			summary $1
-			$0
-		'''
-	Superscript:
-		prefix: "sup"
-		body: '''
-			sup $1
-			$0
-		'''
-	SVG:
-		prefix: "svg"
-		body: '''
-			svg
-				$1
-		'''
+  'Strikethrough':
+    'prefix': 's'
+    'body': 's $1'
+  'Sample Output':
+    'prefix': 'samp'
+    'body': 'samp $1'
+  'Script':
+    'prefix': 'script'
+    'body': 'script${1:(type="${2:text/javascript}")}.\n\t$3'
+  'Script With External Source':
+    'prefix': 'scriptsrc'
+    'body': 'script(src="$1", charset="${2:utf-8}")$0'
+  'Section':
+    'prefix': 'section'
+    'body': 'section\n\t$1'
+  'Select':
+    'prefix': 'select'
+    'body': 'select.$1(name="$2")\n\t$3'
+  'Small':
+    'prefix': 'small'
+    'body': 'small $1'
+  'Source':
+    'prefix': 'source'
+    'body': 'source(src="${1:https://}", type="${2:video/}")$0'
+  'Span':
+    'prefix': 'span'
+    'body': 'span $1'
+  'Strong':
+    'prefix': 'strong'
+    'body': 'strong $1'
+  'Style':
+    'prefix': 'style'
+    'body': 'style(media="screen").\n\t$1'
+  'Subscript':
+    'prefix': 'sub'
+    'body': 'sub $1'
+  'Summary':
+    'prefix': 'summary'
+    'body': 'summary $1'
+  'Superscript':
+    'prefix': 'sup'
+    'body': 'sup $1'
+  'SVG':
+    'prefix': 'svg'
+    'body': 'svg.\n\t$1'
   # T
 	Table:
 		prefix: "table"
