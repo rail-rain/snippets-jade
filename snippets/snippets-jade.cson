@@ -269,36 +269,21 @@
     'prefix': 'q'
     'body': 'q${1:(cite="$2")} $3'
   # R
-	"Ruby Base":
-		prefix: "rb"
-		body: '''
-			rb $1
-			$0
-		'''
-	"Ruby Parenthesis":
-		prefix: "rp"
-		body: '''
-			rp $1
-			$0
-		'''
-	"Ruby Pronunciation":
-		prefix: "rt"
-		body: '''
-			rt $1
-			$0
-		'''
-	"Ruby Text Container":
-		prefix: "rtc"
-		body: '''
-			rtc $1
-			$0
-		'''
-	"Ruby Annotation":
-		prefix: "ruby"
-		body: '''
-			ruby $1
-			$0
-		'''
+  'Ruby Base':
+    'prefix': 'rb'
+    'body': 'rb $1'
+  'Ruby Parenthesis':
+    'prefix': 'rp'
+    'body': 'rp $1'
+  'Ruby Pronunciation':
+    'prefix': 'rt'
+    'body': 'rt $1'
+  'Ruby Text Container':
+    'prefix': 'rtc'
+    'body': 'rtc $1'
+  'Ruby Annotation':
+    'prefix': 'ruby'
+    'body': 'ruby $1'
   # S
 	Strikethrough:
 		prefix: "s"
