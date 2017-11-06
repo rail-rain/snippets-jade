@@ -204,51 +204,30 @@
   'Main':
     'prefix': 'main'
     'body': 'main\n\t$1'
-	Map:
-		prefix: "map"
-		body: '''
-			map
-				$1
-		'''
-	Mark:
-		prefix: "mark"
-		body: '''
-			mark $1
-			$0
-		'''
-	MathML:
-		prefix: "math"
-		body: '''
-			math
-				$1
-		'''
-	Menu:
-		prefix: "menu"
-		body: '''
-			menu
-				$1
-		'''
-	"Menu Item":
-		prefix: "menuitem"
-		body: "menuitem(type=\"${1:command}\", label=\"${2:Save}\") $0"
-	Meter:
-		prefix: "meter"
-		body: '''
-			meter(value="$1"${2:, min="${3:0}", max="${4:100}"}) $5
-			$0
-		'''
-	"Mail Anchor":
-		prefix: "mailto"
-		body: '''
-			a(href="mailto:${1:joe@example.com}?subject=${2:feedback}") ${3:email me}
-			$0
-		'''
-	Meta:
-		prefix: "meta"
-		body: '''
-			meta(name="${1:twitter:}", content="$2")
-			$0
-		'''
+  'Map':
+    'prefix': 'map'
+    'body': 'map\n\t$1'
+  'Mark':
+    'prefix': 'mark'
+    'body': 'mark $1'
+  'MathML':
+    'prefix': 'math'
+    'body': 'math\n\t$1'
+  'Menu':
+    'prefix': 'menu'
+    'body': 'menu\n\t$1'
+  'Menu Item':
+    'prefix': 'menuitem'
+    'body': 'menuitem(type="${1:command}", label="${2:Save}")$0'
+  'Meter':
+    'prefix': 'meter'
+    'body': 'meter(value="$1"${2:, min="${3:0}", max="${4:100}"}) $5'
+  'Mail Anchor':
+    'prefix': 'mailto'
+    'body': 'a(href="mailto:${1:joe@example.com}?subject=${2:feedback}") ${3:email me}'
+  'Meta':
+    'prefix': 'meta'
+    'body': 'meta(name="${1:twitter:}", content="$2")$0'
   # N
 	Navigation:
 		prefix: "nav"
