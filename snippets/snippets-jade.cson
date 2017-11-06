@@ -181,18 +181,12 @@
     'body': 'ins $1'
   # J
   # K
-	"Keyboard Input":
-		prefix: "kbd"
-		body: '''
-			kbd $1
-			$0
-		'''
-	Keygen:
-		prefix: "keygen"
-		body: '''
-			keygen(name="${1:name}", challenge="${2:string}", keytype="${3:RSA}", keyparams="${4:medium}")
-			$0
-		'''
+  'Keyboard Input':
+    'prefix': 'kbd'
+    'body': 'kbd $1'
+  'Keygen':
+    'prefix': 'keygen'
+    'body': 'keygen(name="${1:name}", challenge="${2:string}", keytype="${3:RSA}", keyparams="${4:medium}")$0'
   # L
 	Label:
 		prefix: "label"
