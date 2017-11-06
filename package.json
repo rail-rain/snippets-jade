@@ -8,16 +8,8 @@
   ],
   "repository": "https://github.com/rail-rain/snippets-jade",
   "license": "MIT",
-  "scripts": {
-    "build": "node convert.js"
-  },
   "engines": {
     "atom": "*"
   },
-  "readmeFilename": "README.md",
-  "devDependencies": {
-    "async": "^1.4.2",
-    "cson-parser": "^1.2.0",
-    "html2jade": "^0.8.6"
-  }
+  "readmeFilename": "README.md"
 }
