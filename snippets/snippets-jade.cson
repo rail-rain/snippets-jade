@@ -368,25 +368,16 @@
     'prefix': 'track'
     'body': 'track(kind="${1:subtitles}", src="${2:sampleSubtitles_en.srt}", srclang="${3:en}")$0'
   # U
-	Underline:
-		prefix: "u"
-		body: '''
-			u $1
-			$0
-		'''
-	"Unordered List":
-		prefix: "ul"
-		body: '''
-			ul
-				$1
-		'''
+  'Underline':
+    'prefix': 'u'
+    'body': 'u $1'
+  'Unordered List':
+    'prefix': 'ul'
+    'body': 'ul\n\t$1'
   # V
-	Variable:
-		prefix: "var"
-		body: '''
-			var $1
-			$0
-		'''
+  'Variable':
+    'prefix': 'var'
+    'body': 'var $1'
 	Video:
 		prefix: "video"
 		body: "video(src=\"${1:videofile.ogg}\"${2:, autoplay}${3:, poster=\"${4:posterimage.jpg}\"}) $5"
