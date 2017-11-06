@@ -252,30 +252,18 @@
     'prefix': 'output'
     'body': 'output(name="${1:result}") $2'
   # P
-	Paragraph:
-		prefix: "p"
-		body: '''
-			p $1
-			$0
-		'''
-	Parameter:
-		prefix: "param"
-		body: '''
-			param(name="$1", value="$2")
-			$0
-		'''
-	"Preformatted Text":
-		prefix: "pre"
-		body: '''
-			pre $1
-			$0
-		'''
-	Progress:
-		prefix: "progress"
-		body: '''
-			progress(value="${1:0}", max="${2:100}") ${3:0%}
-			$0
-		'''
+  'Paragraph':
+    'prefix': 'p'
+    'body': 'p $1'
+  'Parameter':
+    'prefix': 'param'
+    'body': 'param(name="$1", value="$2")$0'
+  'Preformatted Text':
+    'prefix': 'pre'
+    'body': 'pre $1'
+  'Progress':
+    'prefix': 'progress'
+    'body': 'progress(value="${1:0}", max="${2:100}") ${3:0%}'
   # Q
 	Quote:
 		prefix: "q"
