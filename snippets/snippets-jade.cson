@@ -229,18 +229,12 @@
     'prefix': 'meta'
     'body': 'meta(name="${1:twitter:}", content="$2")$0'
   # N
-	Navigation:
-		prefix: "nav"
-		body: '''
-			nav
-				$1
-		'''
-	Noscript:
-		prefix: "noscript"
-		body: '''
-			noscript
-				$1
-		'''
+  'Navigation':
+    'prefix': 'nav'
+    'body': 'nav\n\t$1'
+  'Noscript':
+    'prefix': 'noscript'
+    'body': 'noscript\n\t$1'
   # O
 	Object:
 		prefix: "object"
