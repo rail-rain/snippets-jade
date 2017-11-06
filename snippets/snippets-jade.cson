@@ -161,42 +161,24 @@
     'prefix': 'html'
     'body': 'doctype html\nhead\n\tmeta(charset="utf-8")\n\ttitle $1\nbody\n\t$2'
   # I
-	Italic:
-		prefix: "i"
-		body: '''
-			i $1
-			$0
-		'''
-	"Inline Frame":
-		prefix: "iframe"
-		body: '''
-			iframe(src="$1", width="$2", height="$3") $4
-			$0
-		'''
-	Image:
-		prefix: "img"
-		body: '''
-			img(src="$1", alt="$2")
-			$0
-		'''
-	Input:
-		prefix: "input"
-		body: '''
-			input(type="${1:text}", name="$2", value="$3")
-			$0
-		'''
-	Import:
-		prefix: "import"
-		body: '''
-			link(rel="import", href="$1")
-			$0
-		'''
-	"Inserted Text":
-		prefix: "ins"
-		body: '''
-			ins $1
-			$0
-		'''
+  'Italic':
+    'prefix': 'i'
+    'body': 'i $1'
+  'Inline Frame':
+    'prefix': 'iframe'
+    'body': 'iframe(src="$1", width="$2", height="$3") $4'
+  'Image':
+    'prefix': 'img'
+    'body': 'img(src="$1", alt="$2")$0'
+  'Input':
+    'prefix': 'input'
+    'body': 'input(type="${1:text}", name="$2", value="$3")$0'
+  'Import':
+    'prefix': 'import'
+    'body': 'link(rel="import", href="$1")$0'
+  'Inserted Text':
+    'prefix': 'ins'
+    'body': 'ins $1'
   # J
   # K
 	"Keyboard Input":
