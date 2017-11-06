@@ -258,6 +258,9 @@
   'Parameter':
     'prefix': 'param'
     'body': 'param(name="$1", value="$2")$0'
+  'Picture':
+    'prefix': 'picture'
+    'body': 'picture\n\t$1'
   'Preformatted Text':
     'prefix': 'pre'
     'body': 'pre $1'
