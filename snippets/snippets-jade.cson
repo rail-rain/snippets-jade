@@ -127,73 +127,39 @@
     'body': 'form.$1(action="${2:index.html}", method="${3:post}")\n\t$4'
   # G
   # H
-	"Heading 1":
-		prefix: "h1"
-		body: '''
-			h1 $1
-			$0
-		'''
-	"Heading 2":
-		prefix: "h2"
-		body: '''
-			h2 $1
-			$0
-		'''
-	"Heading 3":
-		prefix: "h3"
-		body: '''
-			h3 $1
-			$0
-		'''
-	"Heading 4":
-		prefix: "h4"
-		body: '''
-			h4 $1
-			$0
-		'''
-	"Heading 5":
-		prefix: "h5"
-		body: '''
-			h5 $1
-			$0
-		'''
-	"Heading 6":
-		prefix: "h6"
-		body: '''
-			h6 $1
-			$0
-		'''
-	Head:
-		prefix: "head"
-		body: '''
-			head
-				$1
-		'''
-	Header:
-		prefix: "header"
-		body: '''
-			header
-				$1
-		'''
-	"Heading Group":
-		prefix: "hgroup"
-		body: '''
-			hgroup
-				$1
-		'''
-	"Horizontal Rule":
-		prefix: "hr"
-		body: "hr"
-	HTML:
-		prefix: "html"
-		body: '''
-			doctype html
-			head
-				meta(charset="utf-8")
-				title $1
-			body
-				$2
-		'''
+  "Heading 1":
+    'prefix': 'h1'
+    'body': 'h1 $1'
+  "Heading 2":
+    'prefix': 'h2'
+    'body': 'h2 $1'
+  "Heading 3":
+    'prefix': 'h3'
+    'body': 'h3 $1'
+  "Heading 4":
+    'prefix': 'h4'
+    'body': 'h4 $1'
+  "Heading 5":
+    'prefix': 'h5'
+    'body': 'h5 $1'
+  "Heading 6":
+    'prefix': 'h6'
+    'body': 'h6 $1'
+  'Head':
+    'prefix': 'head'
+    'body': 'head\n\t$1'
+  'Header':
+    'prefix': 'header'
+    'body': 'header\n\t$1'
+  'Heading Group':
+    'prefix': 'hgroup'
+    'body': 'hgroup\n\t$1'
+  'Horizontal Rule':
+    'prefix': 'hr'
+    'body': 'hr'
+  'HTML':
+    'prefix': 'html'
+    'body': 'doctype html\nhead\n\tmeta(charset="utf-8")\n\ttitle $1\nbody\n\t$2'
   # I
 	Italic:
 		prefix: "i"
