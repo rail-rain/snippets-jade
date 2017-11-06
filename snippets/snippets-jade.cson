@@ -236,36 +236,21 @@
     'prefix': 'noscript'
     'body': 'noscript\n\t$1'
   # O
-	Object:
-		prefix: "object"
-		body: '''
-			object(${1:type="$2"}${3:, data="${4:https://}"}) $5
-			$0
-		'''
-	"Ordered List":
-		prefix: "ol"
-		body: '''
-			ol
-				$1
-		'''
-	"Option Group":
-		prefix: "optgroup"
-		body: '''
-			optgroup(label="$1")
-				$2
-		'''
-	Option:
-		prefix: "option"
-		body: '''
-			option${1:(value="$2")} $3
-			$0
-		'''
-	Output:
-		prefix: "output"
-		body: '''
-			output(name="${1:result}") $2
-			$0
-		'''
+  'Object':
+    'prefix': 'object'
+    'body': 'object(${1:type="$2"}${3:, data="${4:https://}"}) $5'
+  'Ordered List':
+    'prefix': 'ol'
+    'body': 'ol\n\t$1'
+  'Option Group':
+    'prefix': 'optgroup'
+    'body': 'optgroup(label="$1")\n\t$2'
+  'Option':
+    'prefix': 'option'
+    'body': 'option${1:(value="$2")} $3'
+  'Output':
+    'prefix': 'output'
+    'body': 'output(name="${1:result}") $2'
   # P
 	Paragraph:
 		prefix: "p"
