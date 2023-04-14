@@ -1,5 +1,5 @@
 # snippets-jade
 
-basic snippets of pug(jade)-language
+Some basic snippets for Pug (formaly Jade) for Atom text editor.
 
-this is converted from snippets of [language-html](https://github.com/atom/language-html)
+Snippents are generated from the snippets in [language-html](https://github.com/atom/language-html).
